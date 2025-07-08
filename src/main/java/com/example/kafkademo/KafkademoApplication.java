@@ -18,6 +18,6 @@ public class KafkademoApplication implements  CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		producer.sendMessage("Message from Spring Boot Kafka Producer");
+		producer.sendMessage("myKey", "Message from Spring Boot Kafka Producer");
 	}
 }
